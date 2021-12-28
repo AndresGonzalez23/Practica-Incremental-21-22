@@ -1,5 +1,6 @@
 %%Practica Incremental Curso 21-22
 %%Andrés González Varela
+%%Hito 1
 
 %% 1. Cargamos las imagen de referencia y las que usaremos como comparación
 %% Para esto usaremos la función imread().
@@ -75,21 +76,40 @@ for i = 1:4
 end
 
 %%Una vez hecho eso ahora usaremos la variable numeroImagen para saber cual
-%%de las 4 imágenes es con un simple ifelse
+%%de las 4 imágenes es con un simple ifelse. Ademas tambien enseñaremos
+%%en una figura cual es la imagen más parecida 
 
+f3 = figure;
 if numeroImagen == 1
     imagen = 'Imagen 1';
+    hold on
+    imshow(comparativa1)
+    title('Imagen mas parecida')
+    hold off
 elseif numeroImagen == 2
     imagen = 'Imagen 2';
+    hold on
+    imshow(comparativa2)
+    title('Imagen mas parecida')
+    hold off
 elseif numeroImagen == 3
     imagen = 'Imagen 3';
+    hold on
+    imshow(comparativa3)
+    title('Imagen mas parecida')
+    hold off
 elseif numeroImagen == 4
     imagen = 'Imagen 4';
+    hold on
+    imshow(comparativa4)
+    title('Imagen mas parecida')
+    hold off
 end
 
-%%A continuación printeamos la solución del primer Hito.
+%%A continuación printeamos la distancia por consola.
 
 fprintf('La imagen mas similar a la imagen de referencia es la: ')
 disp(imagen)
 fprintf('La distancia entre ambas es de: ')
 disp(menorDistancia)
+
