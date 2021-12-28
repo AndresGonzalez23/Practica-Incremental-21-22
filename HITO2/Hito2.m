@@ -58,16 +58,16 @@ end
 
 f2 = figure;
 hold on
-imshow(imagenSimilar)
-title('Zona más Parecida')
-xlabel('Zona de la cuadricula [5 2]')
-disp(distanciaZonaSimilar)
+imshow(imagenReferencia)
+title('Imagen de Referencia')
 hold off
 
 f3 = figure;
 hold on
-imshow(imagenReferencia)
-title('Imagen de Referencia')
+imshow(imagenSimilar)
+title('Zona más Parecida')
+xlabel('Zona de la cuadricula [5 2]')
+disp(distanciaZonaSimilar)
 hold off
 
 %%Al dividir la imagen del asteroide en una cuadricula de 5x6 la zona más
