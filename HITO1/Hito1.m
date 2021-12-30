@@ -77,7 +77,7 @@ end
 
 %%Una vez hecho eso ahora usaremos la variable numeroImagen para saber cual
 %%de las 4 imágenes es con un simple ifelse. Ademas tambien enseñaremos
-%%en una figura cual es la imagen más parecida 
+%%en una figura cual es la imagen más parecida.
 
 f3 = figure;
 if numeroImagen == 1
