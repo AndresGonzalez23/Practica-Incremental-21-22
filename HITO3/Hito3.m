@@ -12,7 +12,9 @@ imagenReferencia = imread('referenciaHito3.jpg');
 HOGReferencia = HOG(imagenReferencia);
 
 %%Ahora definiremos el algoritmos. Creamos las variables con las que
-%%definiremos los saltos en las variables saltoX y saltoY.
+%%definiremos los saltos en las variables saltoX y saltoY. Si modificamos
+%%estos valores debemos recalcular las condiciones de salida del bucle ya
+%%que los los aumentos iterativos serian diferentes.
 
 saltoX = 100;
 saltoY = 120;
@@ -71,11 +73,18 @@ ySimilar = 0;
         end
     end
 
+%%A continuación enseñamos tanto la imagen de referencia (Figure 2) y la
+%%zona mas parecida (Figure 3) y tambien la distancia (por terminal)
+    
+f2 = figure;
+hold on
+imshow(imagenReferencia)
+title('Imagen de Referencia')
+hold off
 
 f3 = figure;
 hold on
 imshow(imagenSimilar)
 title('Zona más Parecida')
-xlabel('Zona de la cuadricula [5 2]')
 disp(distanciaZonaSimilar)
 hold off
