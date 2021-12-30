@@ -10,6 +10,7 @@
 imagenAsteroide = imread('asteroideHito3.jpg');
 imagenReferencia = imread('referenciaHito3.jpg');
 HOGReferencia = HOG(imagenReferencia);
+imshow(imagenAsteroide)
 
 %%Ahora definiremos el algoritmos. Creamos las variables con las que
 %%definiremos los saltos en las variables saltoX y saltoY. Si modificamos
