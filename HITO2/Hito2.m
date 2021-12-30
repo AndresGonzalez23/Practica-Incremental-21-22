@@ -65,12 +65,12 @@ hold off
 f3 = figure;
 hold on
 imshow(imagenSimilar)
-title('Zona más Parecida')
+title('Zona más Parecida al dividir en secciones de 200x200')
 xlabel('Zona de la cuadricula [5 2]')
 disp(distanciaZonaSimilar)
 hold off
 
 %%Al dividir la imagen del asteroide en una cuadricula de 5x6 la zona más
-%%parecida se encontraria en la seccion [5 2] (fila 5 columna 2.
+%%parecida se encontraria en la seccion [5 2] (fila 5 columna 2).
 
 
